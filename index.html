@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Apni Sasti Dukaan</title>
+</head>
+<body>
+
+    <section class="preloader">
+        <img src="img/preloader/25.gif" alt="">
+    </section>
+
+    <section class="allcontent">
+    <header>
+        <a class="shopcart" href="mycart.html"><i class="fas fa-shopping-cart">
+            <span class="Cartin1">0</span>
+        </i></a>
+        <i onclick="shownav()" class="fas fa-bars"></i>
+        <div class="companylogo">
+        <h1>A S D</h1>
+        <p>Apni Sasti Dukaan</p>
+        </div>
+        <input  class="search" type="search" name="" id="" placeholder="Search your product,brand or more..">
+        <nav>
+        
+            <div class="userdetail">
+                <div><i class="fas fa-user"></i>
+                
+                    <a href="login.html">login</a>
+                    </div>
+                        <div> 
+                        <i class="fas fa-heart">
+                            <span class="Wishlistin">0</span>
+                        </i>
+                        <a href="">Wishlist</a>
+                        </div>
+                       
+                       
+                        <div>
+                         <i class="fas fa-shopping-cart">
+                             <span class="Cartin">0</span>
+                         </i>
+                         <a href="mycart.html">My Cart</a>
+                        </div>
+                      
+                        <div> 
+                        <i class="fas fa-user-circle"></i>
+                        <a href="">Checkout</a>
+                       </div>
+    
+                       <div class="sl">
+                        <select class="mx-2">
+                            <option value="">English</option>
+                            <option value="">Hindi</option>
+                        </select>
+            
+                        <select  class="mx-2" name="" id="">
+                            <option value="">USD</option>
+                            <option value="">Rs</option>
+                        </select>
+            
+                    </div>
+                    
+                    <i onclick="hide()" class="fas fa-window-close"></i>
+                </div>
+            </div>
+    
+           
+        </nav>
+    </header>
+
+    <section class="ShopCategory">
+        <a  class="dropdown-btn">Category</a>
+              <a href="#category" data-id="man" class="btn">man</a><br>
+              <a href="#category" data-id="woman" class="btn">woman</a><br>
+              <a href="#category" data-id="kids" class="btn">kids</a> 
+             <a href="#category" data-id="mobile&tab" class="btn">Mobiles&Tablets</a><br>
+             <a href="#category"  data-id="Electronics" class="btn btnelec" >Electronics</a><br>
+             <a href="#category" data-id="Jwelary" class="btn">Jwelary</a>
+    </section>
+
+
+    <main>
+
+        
+   
+            <div class="carousel slide planpg" id="mycarousel" data-ride="carousel">              
+                <div class="carousel-inner lanpg">             
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-fluid" src="img/banner_static2.jpg"alt="">
+                        
+                        
+                    </div>
+                        
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="img/banner_static_top2.jpg"alt="">             
+                        </div>
+
+
+
+                
+
+                            <div class="carousel-item img-fluid">
+                                <img class="d-block w-100 img-fluid" src="img/banner_static_top4.jpg"alt="">
+                               
+                            </div>
+
+
+                                        
+                </div>
+                <a class=" carousel-control-prev"id="category" href="#mycarousel" data-slide="prev">
+                    <span class=" carousel-control-prev-icon bg-dark p-2 "></span>
+                </a>
+                <a class=" carousel-control-next" href="#mycarousel" data-slide="next">
+                    <span class=" carousel-control-next-icon bg-dark p-2"></span>
+                </a>
+            </div>
+
+            <div class="shop-catagorycontainer">
+                <section class="shop-catagory-cont">
+                       
+                </section>
+               </div>
+     
+          
+       
+        <section class="ourservice">
+            <h1 class="px-3">Services</h1>          
+            <div class="services">
+                <div class="service1 col-lg-2 col-md-5 col-11"><i class="fas fa-truck fa-flip-horizontal"></i><p>30 Days Return</p></div>
+                <div class="service2 col-lg-2 col-md-5 col-11"><i class="fas fa-shipping-fast"></i><p>Free - Shipping</p></div>
+                <div class="service3 col-lg-2 col-md-5 col-11"><i class="fas fa-lock"></i> <p>Secure Payments</p></div>
+                <div class="service4 col-lg-2 col-md-5 col-11"><i class="fab fa-whatsapp"></i><p>24/7 Help Center</p></div>
+            </div>
+
+        </section>
+
+        <section class="letest">
+            <div class="letestproduct">
+                <h1>Letest Product</h1>
+                <div class="productchild">
+                <div  class="letestproductimg"><img src="img/product-3.jpg" alt="" srcset="">
+                <div class="stars">
+                    <p>Lorem</p>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                   <span><i class="fas fa-star" ></i></span>
+                   <h5 class="text-danger">Rs 12000/-</h5>
+                </div>
+                <div class="othericon">
+                    <div>
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </div>
+                   
+                    <div>
+                        <i class="fas fa-heart"onclick="Wishlist()"></i>
+                        <span>Wishlist</span>
+                    </div>
+                    
+                    <div>
+                        <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                        <span>Quick view</span>
+                    </div>
+                    
+                    <div>
+                        <i data-id="itm1" class="fas fa-shopping-cart addtocart"onclick="addcart(this)"></i>
+                        <span>Add to cart</span>
+                    </div>
+                  
+                   
+                    
+                </div>
+                </div>
+
+
+                <div  class="letestproductimg"><img src="img/12.jpg" alt="" srcset="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i  data-id="itm2" class="fas fa-shopping-cart addtocart"onclick="addcart(this)"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+                <div  class="letestproductimg"><img src="img/product-4.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i  data-id="itm3" class="fas fa-shopping-cart addtocart"onclick="addcart(this)"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                
+                </div>
+
+                 <div  class="letestproductimg"><img src="img/15.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                  
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i  data-id="itm4" class="fas fa-shopping-cart addtocart"onclick="addcart(this)"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+                 <div  class="letestproductimg"><img src="img/s1.png" alt="">
+                
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i  data-id="itm5" class="fas fa-shopping-cart addtocart "onclick="addcart(this)"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="dealsforyou">
+            <div class="dfu  px-1 py-1">
+                <h1>Discount for you</h1>
+                <button>View all</button>
+            </div>
+    
+        <div class="dealsout">
+        <div class="deals">
+        <div class="dealsinner"><img src="img/k1.png" alt="">
+            <div class="stars">
+                <p>Lorem</p>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+               <span><i class="fas fa-star" ></i></span>
+               <h5>Rs 12000 <br><s>Rs 20,000/-</s> </h5>
+            </div>
+            <div class="othericon">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </div>
+               
+                <div>
+                    <i class="fas fa-heart"onclick="Wishlist()"></i>
+                    <span>Wishlist</span>
+                </div>
+                
+                <div>
+                    <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                    <span>Quick view</span>
+                </div>
+                
+                <div>
+                    <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                    <span>Add to cart</span>
+                </div>
+              
+               
+                
+            </div>
+        </div>
+
+
+
+        <div class="dealsinner"><img src="img/9.jpg" alt="">
+            <div class="stars">
+                <p>Lorem</p>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+               <span><i class="fas fa-star" ></i></span>
+               <h5>Rs 12000 <br><s>Rs 20,000/-</s> </h5>
+            </div>
+            <div class="othericon">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </div>
+               
+                <div>
+                    <i class="fas fa-heart"onclick="Wishlist()"></i>
+                    <span>Wishlist</span>
+                </div>
+                
+                <div>
+                    <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                    <span>Quick view</span>
+                </div>
+                
+                <div>
+                    <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                    <span>Add to cart</span>
+                </div>
+              
+               
+                
+            </div>
+        </div>
+
+
+        <div class="dealsinner"><img src="img/13.jpg" alt="">
+            <div class="stars">
+                <p>Lorem</p>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+               <span><i class="fas fa-star" ></i></span>
+               <h5>Rs 12000 <br> <s>Rs 20,000/-</s> </h5>
+            </div>
+         <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+        </div>
+
+
+        <div class="dealsinner"><img src="img/product-thumb-1.jpg" alt="">
+            <div class="stars">
+                <p>Lorem</p>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+               <span><i class="fas fa-star" ></i></span>
+               <h5>Rs 12000 <br><s>Rs 20,000/-</s> </h5>
+            </div>
+         <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i data-toggle="modal" data-target="#mymodal" class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+        </div>
+      </div>
+    </div>
+
+        </section>
+
+
+        <section class="dealstoday">
+            <h1 class="px-3">Deals of a day</h1>
+            <div class="maindeals"></div>
+            <div class="otherdeals">
+                <div class="otherdealsinner"> <img src="img/3.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+
+                <div class="otherdealsinner"><img src="img/bootstrap-ring.png" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+
+                  <div class="otherdealsinner"><img src="img/14.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+
+                  <div class="otherdealsinner"><img src="img/11.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+
+
+                  <div class="otherdealsinner"><img src="img/product-s-4.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                    <div class="othericon">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </div>
+                       
+                        <div>
+                            <i class="fas fa-heart"onclick="Wishlist()"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-eye"></i>
+                            <span>Quick view</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-shopping-cart"onclick="addcart()"></i>
+                            <span>Add to cart</span>
+                        </div>
+                      
+                       
+                        
+                    </div>
+                </div>
+  
+            </div>
+            <a href="">see all deals</a>
+        </section>
+
+
+        <section class="bestdeals">
+            <div class="bestdealsimg">
+            <img class="col-md-4 shadow-sm col-12" src="img/1_1.jpg" alt="">
+            <img class=" col-md-4 shadow-sm col-12" src="img/1_2.jpg" alt="" >
+            <img class=" col-md-4 shadow-sm col-12"  src="img/1_3.jpg" alt="">
+        </div>
+        </section>
+
+        <section class="youmaylike">
+            <h1 class="px-3 pt-2">You may also like</h1>
+            <div class="youmaylikeproduct">
+                <div>
+                    <img src="img/product-img4.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="img/product-img11.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <img src="img/product-s-3.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/product-img8.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="img/product-img15.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                </div>           
+            </div>
+
+        </section>
+
+        <section>
+            <img src="img/banner_static_top1.jpg" alt=""class="imgoff img-flui">
+        </section>
+
+
+        <section class="upcominglastvisit">
+            <div class="upcomingbackground">
+            <div class="upcoming">
+             <h1 class="px-4 pt-2 pb-1">Upcoming items</h1>
+              <div class="Upcomingitems">
+             <div>
+                <img src="img/product-f-1.jpg" alt="">
+                <div class="stars">
+                    <p>Lorem</p>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                   <span><i class="fas fa-star" ></i></span>
+                   <h5 class="text-danger">Rs 12000/-</h5>
+                </div>
+             </div>
+
+
+             <div>
+                <img src="img/product-f-2.jpg" alt="">
+                <div class="stars">
+                    <p>Lorem</p>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                   <span><i class="fas fa-star" ></i></span>
+                   <h5 class="text-danger">Rs 12000/-</h5>
+                </div>
+             </div>
+
+
+
+             <div>
+                <img src="img/product-f-4.jpg" alt="">
+                <div class="stars">
+                    <p>Lorem</p>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                   <span><i class="fas fa-star" ></i></span>
+                   <h5 class="text-danger">Rs 12000/-</h5>
+                </div>
+             </div>
+
+
+             <div>
+                <img src="img/product-details-img4.jpg" alt="">
+                <div class="stars">
+                    <p>Lorem</p>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                    <i class="fas fa-star" ></i>
+                   <span><i class="fas fa-star" ></i></span>
+                   <h5 class="text-danger">Rs 12000/-</h5>
+                </div>
+             </div>
+
+        
+             
+           
+          
+            </div>
+        </div>
+
+    </div>
+            <div class="lastvisit">
+             <h1>Last visited</h1>
+             <div class="lastvisiteditem">
+                <div>
+                    <img src="img/lastvisit/1.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+
+ <div>
+                    <img src="img/lastvisit\2.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+
+                 <div>
+                    <img src="img/lastvisit\6.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+
+                 <div>
+                    <img src="img/lastvisit/dress-shirt-img.png" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+                 <div>
+                    <img src="img/lastvisit/neklesh-img.png" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+                 <div>
+                    <img src="img/lastvisit/women-clothes-img.png" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+                 <div>
+                    <img src="img/lastvisit/product-img12.jpg" alt="">
+                    <div class="stars">
+                        <p>Lorem</p>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
+                       <span><i class="fas fa-star" ></i></span>
+                       <h5 class="text-danger">Rs 12000/-</h5>
+                    </div>
+                 </div>
+
+
+             </div>
+
+            </div>
+       
+        </section>
+
+        <section>
+            <h1 class="px-3">Manufactures</h1>
+            <div class="Manufactures">
+                <img src="img/1 (3).png" alt="">
+                <img src="img/2 (3).png" alt="">
+                <img src="img/brand3.png" alt="">
+                <img src="img/3 (3).png" alt="">
+
+            </div>
+            
+        </section>
+
+        <section class=" download-app-box">
+        <span class="fas fa-download"></span> Download Our Android App and Get 10% additional Off on all Products . <a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
+        </section>
+
+        <section class="modal"id="mymodal" data-backdrop="static">
+            <div class="modal-dialog mx-auto modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h1>Product Preview</h1>
+                        <span class="close" data-dismiss="modal">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                        <div>
+                            <img src="../Apni sasti dukaan/img/s1.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="../Apni sasti dukaan/img/s2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="../Apni sasti dukaan/img/s3.png" alt="">
+                        </div>
+
+                       
+                        
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <img class="productbtn" id="productbtn1" src="../Apni sasti dukaan/img/s1.png" alt="">
+                        <img class="productbtn" id="productbtn2" src="../Apni sasti dukaan/img/s2.png" alt="">
+                        <img class="productbtn" id="productbtn3"  src="../Apni sasti dukaan/img/s3.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row-fluid">
+        <div class="span">
+        <h5>Your Account</h5>
+        <a href="#">YOUR ACCOUNT</a><br>
+        <a href="#">PERSONAL INFORMATION</a><br>
+        <a href="#">ADDRESSES</a><br>
+        <a href="#">DISCOUNT</a><br>
+        <a href="#">ORDER HISTORY</a><br>
+         </div>
+        <div class="span">
+        <h5>Information</h5>
+        <a href="contact.html">CONTACT</a><br>
+        <a href="#">SITEMAP</a><br>
+        <a href="#">LEGAL NOTICE</a><br>
+        <a href="#">TERMS AND CONDITIONS</a><br>
+        <a href="#">ABOUT US</a><br>
+         </div>
+        <div class="span">
+        <h5>Our Offer</h5>
+        <a href="#">NEW PRODUCTS</a> <br>
+        <a href="#">TOP SELLERS</a><br>
+        <a href="#">SPECIALS</a><br>
+        <a href="#">MANUFACTURERS</a><br>
+        <a href="#">SUPPLIERS</a> <br/>
+         </div>
+         </div>
+        </footer> 
+    </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="script.js"></script>
+
+</body>
+</html>

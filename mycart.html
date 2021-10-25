@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>my cart</title>
+    <style>
+     *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+     }
+
+  
+
+     body{
+         padding:5px;
+         overflow-x: hidden;
+     }
+       main{
+           overflow-x: scroll;
+       }
+       main::-webkit-scrollbar{
+           visibility: hidden;
+       }
+
+      
+
+      
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1 class="py-2 text-center text-white" style="background-color: maroon;">My Shopping Cart</h1>
+    </nav>
+
+    <section class="my-3">
+        <div class="container  border border-dark">
+            <div class=" row">
+                <div class="product col-md-6 col-12 row d-flex align-items-center ">
+                    <div class="col-md-6 col-12 my-3">
+                        <img class="img-fluid" src="img/product-b-4.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <p>lorem</p>
+                        <p>12000 <s class="text-danger">20,000</s></p>
+                        <button class=" btn  border">Save for later</button>
+                        <button class="btn border">Remove</button>
+                    </div>
+                </div>
+                <div class="summary col-md-6 col-12 p-2 my-3">
+                    <button class="btn form-control bg-dark text-white">checkout</button>
+                    <p class="text-center py-2">By placing your order,you agree to the Delivery Terms </p>
+                    <h4 class="font-weight-bold">Order Summary</h4>
+
+                    <div class="m-2 bg-light">
+                        <p>1 product</p>
+                        <p>Product total=12000</p>
+                        <p>Delivery=free</p>
+                        <p class="font-weight-bold">Total=12000</p>
+                        <button class="btn bg-danger text-white form-control">Place-order</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+ <script>
+  let body=document.querySelector("body");
+
+  let cartitm=JSON.parse(localStorage.getItem("cartitms"));
+  body.insertAdjacentHTML("beforeend",cartitm);
+
+
+ </script>
+</body>
+</html>
