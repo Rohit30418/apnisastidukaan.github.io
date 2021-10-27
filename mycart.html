@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>my cart</title>
+    <style>
+     *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+     }
+
+  
+
+     body{
+         padding:5px;
+         overflow-x: hidden;
+     }
+       main{
+           overflow-x: scroll;
+       }
+       main::-webkit-scrollbar{
+           visibility: hidden;
+       }
+
+
+       .noitem{
+           width: 100%;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           font-size: 30px;
+       }
+
+       .noitem i{
+           font-size: 50px;
+       }
+      
+
+      
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1 class="py-2 text-center text-white h2" style="background-color: maroon;">My Shopping Cart</h1>
+    </nav>
+
+
+    <section class="noitem">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Your Cart Is Empty :(</p>
+    </section>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+ <script>
+  let body=document.querySelector("body");
+  let noitem=document.querySelector(".noitem");
+
+  let cartitm=JSON.parse(localStorage.getItem("cartitms"));
+  if (cartitm!=null) {
+    body.insertAdjacentHTML("beforeend",cartitm);
+    noitem.style.display="none";
+  } else {
+    noitem.style.display="flex";
+  }
+ 
+
+
+ </script>
+</body>
+</html>
