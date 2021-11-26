@@ -1,0 +1,1343 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: maroon;
+    border-radius: 10px;
+
+}
+
+:root{
+    --boxshadow: 0 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+html{
+    font-size:90%;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allcontent{
+    display: none;
+}
+
+
+html ,body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    width: 100%;
+
+}
+body{
+    position: relative;
+}
+
+body.show::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width:100% ;
+    height: 100%;
+    z-index: 1;
+
+}
+
+body p{
+    font-size: 16px;
+}
+
+
+body.showcart::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width:100% ;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.mycart{
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    top:25vh;
+    margin:0px 5%;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    display: none;
+    overflow-y:scroll;
+    
+    
+}
+
+.mycart.show{
+    display: block;
+}
+
+.cartheader{
+    background-color: rgb(34, 133, 246);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: white;
+}
+
+
+.cartheader i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cartbody .letestproduct{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.letestproduct>div{
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.cartbody .stars button{
+    padding: 5px 8px;
+    width:100px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cartbody .stars button:hover{
+    transition: all 0.5s;
+    background-color:rgb(34, 133, 246);
+    color: white;
+    border: 1px solid white;
+}
+
+.cartfooter{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(34, 133, 246);
+}
+.cartfooter button{
+    padding: 5px 20px;
+    background-color:orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    color: white;
+    background-color:maroon;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    box-shadow: var(--boxshadow);
+}
+
+header .shopcart{
+    display: none;
+    position:absolute;
+}
+
+header input{
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    border:none;
+  
+  
+ }
+ .companylogo{
+     text-align: center;
+ }
+
+
+nav{
+display: flex;
+align-items: center;
+background-color: transparent;
+}
+
+header .sl{
+    display: flex;  
+    align-items: center;
+}
+
+header .search{
+    max-width: 400px;
+}
+
+header .fa-bars{
+font-size: 25px;
+display: none;
+cursor: pointer;
+}
+
+
+nav .userdetail{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    transition: all 0.5s;
+    color: white;
+}
+
+
+
+nav .userdetail a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+nav .fa-window-close{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.ShopCategory{
+    display: flex;
+    font-size: 12px;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+
+
+
+
+.ShopCategory a{
+    padding: 10px;
+    width: 130px;
+    max-height: 50px;
+    margin:  5px;
+    border:1px solid black;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s;
+    font-size: 14px;
+    }
+
+    .ShopCategory a:hover{
+        background-color: maroon;
+        color: white;
+    }
+
+.ShopCategory .dropdown-btn{
+    background-color: maroon;
+    color: white;
+    border: 1px solid white;
+
+}
+.fa-heart{
+    position: relative;
+}
+.fa-heart .Wishlistin{
+    position: absolute;
+    top:-15px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    visibility: hidden;
+}
+
+.Wishlistin.show{
+    visibility: visible;
+}
+
+.fa-shopping-cart{
+    position: relative;
+}
+
+.fa-shopping-cart .Cartin, .Cartin1{
+    position: absolute;
+    top:-15px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    visibility: hidden;
+}
+.Cartin.show{
+    visibility: visible;
+}
+
+header .shopcart .Cartin1.show{
+    visibility: visible;
+}
+
+.userdetail div{
+    margin: 0px 10px;
+}
+
+
+
+.lanpg a{
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.lanpg a:hover{
+    background-color: red;
+    border-radius: 15px;
+    transition: all 0.5s;
+    box-shadow:0px 1px 5px 0px white;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countdown div{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.shop-catagorycontainer{
+    background-color: rgb(32, 14, 144);
+    padding: 20px 10px;
+    display: none;
+
+}
+
+.shop-catagory-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    background-color: rgb(255, 255, 255);
+    margin: 15px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+
+.shop-catagory-cont::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.shop-catagory-cont>div{
+border: 1px solid rgb(214, 214, 214);
+margin: 10px;
+}
+
+.shop-catagory-cont img{
+    height: 150px;
+    width: 150px;
+}
+
+.shop-catagory-itms{
+    margin: 0 10px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.shop-catagory-itms:hover .othericon{
+    transform: translate(0%);
+
+}
+
+.services{
+    display: flex;
+    justify-content:space-between;
+    margin: 0px 20px;
+    flex-wrap:wrap;
+    align-items:center;
+    padding: 10px 0px;
+    background-color: maroon;
+
+}
+
+.services .service1{
+    background-color:rgb(194, 72, 72);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+    color:white;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+}
+.services .service1::before{
+    content: "And free returns.See checkout for delivery dates.";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: white;
+    color: black;
+    transform: translate(0,-100%);
+    transition: all 0.5s;
+}
+.services .service1:hover::before{
+    transform: translate(0,0%);
+}
+
+
+.services .service2{
+    background-color:rgb(180, 93, 35);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+    color:white;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.services .service2::before{
+    content: "And free delivery for more then 400Rs/-";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: white;
+    color: black;
+    transform: translate(0,-100%);
+    transition: all 0.5s;
+}
+
+.services .service2:hover::before{
+    transform: translate(0,0%);
+}
+
+
+.services .service3{
+    background-color:rgb(72, 105, 194);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+    color:white;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.services .service3::before{
+    content: "Pay with the world's most popular and secure payment methods.";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: white;
+    color: black;
+    transform: translate(0,-100%);
+    transition: all 0.5s;
+}
+.services .service3:hover::before{
+    transform: translate(0,0%);
+}
+.services .service4{
+    background-color:rgb(159, 72, 194);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+    color:white;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+}
+.services .service4::before{
+    content: "Have a question? Call a Specialist or chat online.";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: white;
+    color: black;
+    transform: translate(0,-100%);
+    transition: all 0.5s;
+}
+.services .service4:hover::before{
+    transform: translate(0,0%);
+}
+
+
+.letestproduct{
+    overflow-x:hidden;
+    background-color: coral;
+    padding: 20px;
+}
+
+.productchild{
+    display: flex;
+    justify-content: space-between;
+    margin:0px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow-x: scroll;
+    
+}
+
+.letestproduct .letestproductimg{ 
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 150px;
+    border: 1px solid rgb(219, 219, 219);
+}
+.letestproduct .letestproductimg:hover{
+    box-shadow: var(--boxshadow);
+    transition: all 0.3s;
+}
+.othericon{
+position: absolute;
+width:100%;
+height:100%;
+top:0px;
+background-color: rgba(0,0,0,0.2);
+transform: translate(-100%);
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+transition: all 0.5s;
+}
+.letestproductimg:hover .othericon{
+    transform: translate(0%);
+
+}
+
+.othericon i{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 40px;
+    transition: all 0.5s;
+}
+.othericon span{
+    background-color: red;
+    color: white;
+    padding: 3px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.othericon i:hover~span{
+    transition: all 0.5s;
+    opacity: 1;
+   
+}
+
+.othericon i:hover{
+    background-color: red;
+    transition: all 0.5s;
+}
+
+.letestproductimg:hover::before{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+.letestproduct img{
+    height: 150px;
+    width: 150px;
+}
+
+.dealsforyou{
+    background-color:rgb(42, 108, 231);
+    padding: 10px auto;
+}
+
+.deals{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+   
+     
+}
+
+.deals>div{
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.dealsinner{
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    transition: all 0.5s;
+}
+
+.dealsout{
+    background-color: white;
+    margin: 0px 20px;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.dealsinner:hover{
+    box-shadow: var(--boxshadow);
+}
+.dealsinner:hover .othericon{
+    transform: translate(0%);
+}
+ 
+
+
+.otherdealsinner{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.5s;
+    min-width: 150px;
+
+}
+
+.otherdealsinner:hover{
+    box-shadow: var(--boxshadow);
+}
+
+.otherdealsinner:hover .othericon ,.otherdealsinner .othericon:ac{
+    transform: translate(0%);
+}
+
+.otherdeals>div{
+    border: 1px solid rgb(214, 214, 214);
+}
+
+
+
+.deals img{
+    height: 150px;
+    width: 150px;
+}
+
+.deals h5{
+    color: green;
+}
+
+.deals s{
+    color: red;
+}
+
+.dfu{
+    display: flex;
+    justify-content: space-between;
+    margin:  20px;
+    align-items: center;
+    height: 50px;
+    padding: 40px 10px;
+}
+
+.dfu button{
+    background-color: rgb(33, 118, 228);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+}
+
+.dealstoday{
+   background-image: url("img/1 (2).png");
+   padding: 20px 0px;
+}
+
+.otherdeals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0px 20px;
+    border-radius: 10px;
+    overflow-x: scroll;
+  
+}
+
+.otherdeals img{
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.youmaylike{
+     background-image: url("img/white_leather.png");
+     padding: 10px 0px;
+}
+.youmaylikeproduct{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    margin: 0 10px;
+    align-items: center;
+    background-color: white;
+    margin: 0px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+
+.youmaylikeproduct>div{
+    border: 1px solid rgb(214, 214, 214);
+    margin: 15px;
+}
+
+.youmaylike img{
+    height: 150px;
+    width: 150px;
+}
+
+
+.planpg{
+ margin-top: 120px;   
+}
+
+.upcomingbackground{
+    background-color: rgb(155, 224, 241);
+    padding: 10px 0px;
+}
+.Upcomingitems{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin:0px 30px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-x: scroll;
+
+}
+
+.Upcomingitems>div{
+    border: 1px solid rgb(214, 214, 214);
+    min-width:150px ;
+    margin: 5px;
+}
+
+.Upcomingitems img{
+    height: 150px;
+    width: 150px;
+}
+
+.Manufactures{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+
+.bestdealsimg{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bestdeals img{
+    padding: 10px;
+    transition: all 0.5s;
+    margin: auto;
+    max-height: 300px;
+    width: 100%;
+}
+.bestdeals img:hover{
+    transition: all 0.5s;
+   transform: scale(1.08);
+}
+
+.carousel{
+    width: 100%;
+    margin:10px 0px;
+}
+
+
+
+.carousel img{
+    width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+
+}
+
+.slide-btn a{
+text-decoration: none;
+padding: 5px 10px;
+border: 1px solid rgb(0, 0, 0);
+background-color:yellow;
+color:black;
+transition: all 0.5s;
+}
+
+.slide-btn a:hover{
+    background-color:black;
+    color:white;
+    transition: all 0.5s;
+}
+.Manufactures{
+    display: flex;
+    justify-content:space-around;
+}
+
+.Manufactures img{
+    max-width: 150px;
+    min-width: 50px;
+}
+.imgoff{
+    width: 100%;
+    height: 40vh;
+    transition: all 0.5s;
+  
+}
+
+
+.imgoff:hover{
+    transform: scale(1.02);
+}
+.stars{
+    margin: 0px 20px;
+}
+.stars i{
+    color: orangered;
+}
+.stars span i{
+    color:black;
+}
+
+.download-app-box{
+    background-color: green;
+    text-align: center;
+    color:white;
+}
+
+.heading{
+    font-size: 25px;
+}
+.logindiv{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:10vh 5vh;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.logindiv h1{
+    font: size 2.5rem;
+    background-color: maroon;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.loginpg{
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid rgb(83, 83, 83);
+    position: relative;
+  
+}
+
+.loginpg::before{
+    content: "";
+    position: absolute;
+    width:50%;
+    left: 30px;
+    background-color: black;
+    height: 100px;
+    bottom: -5px;
+    z-index: -1;
+    transform: skewY(-10deg);
+    filter: blur(4px);
+}
+
+.loginpg::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    right: 30px;
+    background-color: black;
+    height: 100px;
+    bottom: -5px;
+    z-index: -1;
+    transform: skewY(10deg);
+    filter: blur(4px);
+}
+
+.loginpg input{
+   width: 90%;
+   padding: 5px;
+   margin: 10px 2vw;
+   font-size: 15px;
+   border: none;
+   border-bottom: 1px solid rgb(160, 160, 160);
+   outline: none;
+}
+.loginpg input:focus{
+    border-bottom: 1px solid black;
+}
+
+.loginbefore-end{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:  5px;
+}
+
+.loginpg button{
+
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(131, 131, 131);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.loginpg button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    filter: blur(5px);
+    transform: rotate(40deg);
+    animation: btnani 2s linear infinite forwards;
+}
+
+.chkbox input{
+    width: 20px;
+    margin: 0px;
+}
+
+.signupdiv{
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+    background-color: white;
+    position: relative;
+    border: 1px solid rgb(160,160,160);
+    border-radius: 10px;
+}
+
+.signupdiv::before{
+    content: "";
+    position: absolute;
+    width:50%;
+    left:30px;
+    background-color: black;
+    height: 100px;
+    bottom: -5px;
+    z-index: -1;
+    transform: skewY(-10deg);
+    filter: blur(4px);
+}
+
+.signupdiv::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    background-color: black;
+    height: 100px;
+    bottom: -5px;
+    z-index: -1;
+    right:30px;
+    transform: skewY(10deg);
+    filter: blur(4px);
+}
+
+
+
+.signupdiv input{
+    width: 90%;
+   padding: 5px;
+   margin: 10px 2vw;
+   font-size: 15px;
+   border: none;
+   border-bottom: 1px solid rgb(160, 160, 160);
+   outline: none;
+}
+
+.signupdiv input:focus{
+    border-bottom: 1px solid black;
+}
+
+.signupdiv button{
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(131, 131, 131);
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.signupdiv button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    filter: blur(5px);
+    transform: rotate(40deg);
+    animation: btnani 2s linear infinite forwards;
+}
+
+.upcominglastvisit{
+    background-color: rgb(240, 128, 128);
+}
+
+.lastvisit{
+    margin: 20px;
+}
+
+.lastvisiteditem{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.lastvisiteditem>div{
+    border: 1px solid rgb(214, 214, 214);
+    margin: 10px;
+}
+.lastvisit img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.modal-dialog{
+    overflow: hidden;
+}
+
+.modal-body{
+    display: flex;
+    width: 300%;
+    justify-content: space-between;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+.modal-body:hover{
+   animation-play-state: paused;
+}
+
+.modal-body div{
+    width: 100%;
+    margin: 5px;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+footer{
+    background-color:maroon;
+    padding: 20px 0;
+
+}
+
+footer .row-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .span h5{
+    color:black;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer .span a{
+    color:white;
+    text-decoration: none;
+}
+
+
+@keyframes btnani{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes prosli{
+    0%{
+        transform: translate(0%);
+    }
+
+    16%{
+        transform: translate(0%);
+    }
+    32%{
+        transform: translate(-33.33%);
+
+    }
+
+    48%{
+        transform: translate(-33.33%);
+        
+    }
+
+    64%{
+        transform: translate(-66.66%);
+        
+    }
+
+    100%{
+        transform: translate(-66.66%);
+        
+    }
+} 
+
+
+@keyframes slidshow{
+  0%{
+      transform: translate(0%);
+  }
+  100%{
+      transform: translate(-100%);
+  }
+}
+
+
+
+
+@media (max-width:1070px) {
+
+html{
+    font-size: 85%;
+}
+nav{
+    justify-content: center;
+}
+
+
+header{
+    flex-direction: column;
+}
+
+header .shopcart{
+    display: block;
+    right: 20px;
+    top:20px;
+    color: white;
+}
+
+footer .row-fluid{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .row-fluid{
+    margin: 0px 20px;
+}
+
+header .fa-bars{
+   position: absolute;
+   top:20px;
+   left: 10px;
+    }
+
+
+header input{
+   width: 80%;
+  margin-bottom: 20px;
+}
+
+
+    nav .userdetail{
+        position:absolute;
+        width:50%;
+        transform: translate(-100%);
+        min-width:200px;
+        max-width: 200px;
+        top:0px;
+        left: 0px;
+        height: 100vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.5s;
+        background-color: rgb(221, 40, 40);
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+
+
+    .ShopCategory{
+        position:static; 
+        flex-wrap: nowrap;
+        overflow: scroll;
+        scroll-behavior: smooth; 
+        margin-top:140px;
+    }
+
+   
+
+    .ShopCategory::-webkit-scrollbar{
+        visibility: hidden;
+    }
+
+    nav.show .userdetail{
+        transform: translate(0%);
+    }
+
+    header .fa-bars{
+       
+        display:block;
+        }
+
+        
+nav .fa-window-close{
+    display:block;
+}
+
+    
+nav .userdetail{
+ flex-direction: column;
+}
+
+nav .userdetail div{
+    margin: 50px 0px;
+}
+
+
+
+}
+
+@media(max-width:780px){
+
+html{
+    font-size: 80%;
+}
+
+ .bestdeals img{
+        padding: 10px;
+        transition: all 0.5s;
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .deals{
+        width:800px;
+            
+    }
+}
+
+
+
+@media(max-width:425px) {
+
+
+    html{
+        font-size:70%;
+    }
+
+}
+
+
+@media(max-width:1175px) {
+   
+   
+    .bestdeals{
+        flex-direction: column;
+    }
+    
+  
+
+
+}

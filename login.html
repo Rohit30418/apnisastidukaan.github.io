@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Apni sasti dukaan login</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-image:linear-gradient(to right bottom,rgb(230, 105, 105),rgb(41, 1, 1));
+    
+}
+
+header{
+    padding: 10px 0px;
+}
+
+ small{
+    color: red;
+    display: none;
+    font-size: 14px;
+   
+}
+
+small.showerr{
+    display: block;
+}
+
+
+  
+</style>
+<body>
+    <header>
+        <div class="companylogo">
+        <h1 class="h2 text-center">A S D</h1>
+       <p class="text-center">Apni Sasti Dukaan</p>
+        </div>
+        <div>
+          
+    </header>
+
+    <section class="heading"><h1>Welcome:)</h1></section>
+    
+    <section class="logindiv">
+        <div class="loginpg">
+            <h1 class="h2">Login</h1>
+            <input type="text" name="" id=""placeholder="Enter user name">
+            <input type="text" name="" id=""placeholder="Enter your password">
+            <div class="loginbefore-end">
+                <div class="chkbox">
+                    <input type="checkbox" name="" id="">
+                    <label for="checkbox">Remember Me</label>
+                </div>
+
+                    <div>
+                            <a href="">Forgotten password?</a>
+                    </div>
+               
+            </div>
+            <button>Login</button>
+        </div>
+        <div class="signupdiv">
+
+            <h1 class="h2">Sign up</h1>
+                <div>
+                    <input type="text" name="" id="rgname"placeholder="Enter your full name"><br>
+                    <small></small>
+                </div>
+
+
+                <div >
+                    <input type="email" name="" id="rgmail"placeholder="Enter your Email-Address"><br>
+                    <small></small>
+                </div>
+               
+                    <div>
+                        <input type="text" name="" id="rgpass"placeholder="password">
+                        <small></small>
+                    </div>
+
+                    <div>
+                        <input type="text" name="" id="rgcpass"placeholder="Confirm Password">
+                        <small></small>
+                    </div>
+
+                    <div>
+                        <input type="text"placeholder="Enter your address"id="rgaddress">
+                        <small></small>
+                    </div>
+
+                
+
+                    <button onclick="signup()">Register</button>
+                
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="row-fluid">
+        <div class="span">
+        <h5>Your Account</h5>
+        <a href="#">YOUR ACCOUNT</a><br>
+        <a href="#">PERSONAL INFORMATION</a><br>
+        <a href="#">ADDRESSES</a><br>
+        <a href="#">DISCOUNT</a><br>
+        <a href="#">ORDER HISTORY</a><br>
+         </div>
+        <div class="span">
+        <h5>Information</h5>
+        <a href="contact.html">CONTACT</a><br>
+        <a href="#">SITEMAP</a><br>
+        <a href="#">LEGAL NOTICE</a><br>
+        <a href="#">TERMS AND CONDITIONS</a><br>
+        <a href="#">ABOUT US</a><br>
+         </div>
+        <div class="span">
+        <h5>Our Offer</h5>
+        <a href="#">NEW PRODUCTS</a> <br>
+        <a href="#">TOP SELLERS</a><br>
+        <a href="#">SPECIALS</a><br>
+        <a href="#">MANUFACTURERS</a><br>
+        <a href="#">SUPPLIERS</a> <br/>
+         </div>
+         </div>
+        </footer>
+    
+</body>
+<script>
+let rgname=document.querySelector("#rgname");
+let rgmail=document.querySelector("#rgmail");
+let rgpass=document.querySelector("#rgpass");
+let rgcpass=document.querySelector("#rgcpass")
+let rgaddress=document.querySelector("#rgaddress")
+var mailfor=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+
+
+
+
+function seterror(iptype,msg) {
+    iptype.style.border="1px solid red";
+    let piptype=iptype.parentElement;
+    let small=piptype.querySelector("small");
+    small.innerHTML=msg;
+    small.classList.add("showerr")
+    
+
+}
+   
+
+    function setsuccess(iptype) {
+    iptype.style.border="1px solid green";
+    let piptype=iptype.parentElement;
+    let small=piptype.querySelector("small");
+    small.classList.remove("showerr")
+}
+
+function signup(){
+if(rgname.value==""){
+    seterror(rgname,"name can't be blank");
+}else if(rgname.value.length<3){
+    seterror(rgname,"min 3 char");
+}else{
+    setsuccess(rgname);
+}
+
+
+if(rgmail.value=="") {
+    seterror(rgmail,"mail can't be blankl");
+ } else if(!mailfor.test(rgmail.value)){
+         seterror(rgmail,"not a valid mail");
+ }else{
+    setsuccess(rgmail);
+ }
+  
+ if(rgpass.value=="") {
+    seterror(rgpass,"password can't be empty");
+ } else if(rgpass.value.length<8) {
+    seterror(rgpass,"password should be min 8 char");
+     
+ }else{
+     setsuccess(rgpass);
+ }
+
+
+ if(rgcpass.value=="") {
+    seterror(rgcpass,"password can't be empty");
+
+ }else if(rgpass.value!=rgcpass.value) {
+    seterror(rgcpass,"password did't match");
+
+ }else{
+    setsuccess(rgcpass);
+ }
+
+ 
+
+ if(rgaddress.value==""){
+ seterror(rgaddress,"address can't be empty");
+ }else{
+ setsuccess(rgaddress);
+}
+}
+
+
+</script>
+</html>
